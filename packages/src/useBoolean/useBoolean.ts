@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { FunctionVoid } from "../utils";
 
-interface ReturnType {
+interface OutputType {
   value: boolean;
-  setTrue: () => void;
-  setFalse: () => void;
-  toggle: () => void;
+  setTrue: FunctionVoid;
+  setFalse: FunctionVoid;
+  toggle: FunctionVoid;
 }
 
-export function useBoolean(defaultValue?: boolean): ReturnType {
+export function useBoolean(defaultValue?: boolean): OutputType {
   const [value, setValue] = useState(!!defaultValue);
 
   const setTrue = () => setValue(true);
