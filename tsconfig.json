@@ -1,15 +1,3 @@
 {
-	"compilerOptions": {
-		"declaration": true,
-		"outDir": "./dist",
-		"baseUrl": ".",
-		"skipLibCheck": true,
-		"jsx": "react-jsx",
-		"strict": true,
-		"target": "es2016",
-		"forceConsistentCasingInFileNames": true,
-		"module": "commonjs",
-		"esModuleInterop": true
-	},
-	"exclude": ["node_modules", "dist"]
+  "extends": "@repo/typescript-config/base.json"
 }
